@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Syngular</title>
+	<meta name="description" content="Scroll animations for image grids powered by Locomotive Scroll">
+	<meta name="keywords" content="locomotive scroll, scroll animation, website, javascript, demo">
+	<meta name="author" content="Codrops">
+	<link rel="shortcut icon" href="/favicon.26242483.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zjs0dpp.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="demo-1 loading">
+	<svg class="hidden">
+		<symbol id="icon-arrow" viewBox="0 0 24 24">
+			<title>arrow</title>
+			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "></polygon>
+		</symbol>
+		<symbol id="icon-drop" viewBox="0 0 24 24">
+			<title>drop</title>
+			<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"></path>
+			<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"></path>
+		</symbol>
+		<symbol id="icon-menu" viewBox="0 0 119 25">
+			<title>menu</title>
+			<path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z"></path>
+		</symbol>
+		<symbol id="icon-close" viewBox="0 0 24 24">
+			<title>close</title>
+			<path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"></path>
+		</symbol>
+	</svg>
+	<main data-scroll-container="">
+		<section id="header" class="content content--numbered banner">
+
+			<video autoplay="" muted="" loop="" id="syngular-video">
+				<source src="/Web.be37bb61.webm" type="video/webm">
+			</video>
+			<!-- <div class="frame">
+					<div class="frame__title-wrap">
+						<h1 class="frame__title">Image Tiles Scroll Animation with <a href="https://locomotivemtl.github.io/locomotive-scroll/">Locomotive Scroll</a></h1>
+					</div>
+					<div class="frame__links">
+						<a href="https://tympanus.net/Development/videoTransitions/">Previous demo</a>
+						<a href="https://tympanus.net/codrops/?p=51396">Article</a>
+						<a href="https://github.com/codrops/TileScroll/">GitHub</a>
+					</div>
+					<div class="frame__demos">
+						<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
+						<a href="index2.html" class="frame__demo">Demo 2</a>
+						<a href="index3.html" class="frame__demo">Demo 3</a>
+					</div>
+				</div>
+				<p class="content__pretitle">Unseeing the seen</p> -->
+			<img src="/syngular.22a52702.png" alt="logo" class="logo">
+			<h1 class="content__title titulo-principal" data-scroll="" data-scroll-speed="2">Discover <br>Evolve
+				<br><span>Launch!</span></h1>
+			<span>Cuando todos se ven igual y piensan igual decidimos ser Syngulares</span>
+		</section>
+		<nav class="menu">
+			<div class="menu__item menu__item--1" data-direction="bt">
+				<div class="menu__item-inner">
+					<div class="mainmenu">
+						<a href="#" class="mainmenu__item">Servicios</a>
+						<a href="#" class="mainmenu__item">Blog</a>
+						<a href="#" class="mainmenu__item">Proyectos</a>
+						<a href="/nosotros.html" class="mainmenu__item">Nosotros</a>
+						<a href="#" class="mainmenu__item">Contacto</a>
+					</div>
+					<p class="label label--topleft label--vert-mirror">the important stuff</p>
+					<p class="label label--bottomright label--vert">made in bannockburn</p>
+				</div>
+			</div>
+			<div class="menu__item menu__item--2" data-direction="lr">
+				<div class="menu__item-inner">
+					<div class="menu__item-map"></div>
+					<a href="#" class="menu__item-hoverlink">The location</a>
+				</div>
+			</div>
+			<div class="menu__item menu__item--3" data-direction="bt">
+				<div class="menu__item-inner">
+					<div class="sidemenu">
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">The Gameplay</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">About LARP</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">The Rules</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">History</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">People</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Join</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">...</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--4" data-direction="rl">
+				<div class="menu__item-inner">
+					<p class="label label--topleft label--line">Join us now</p>
+					<a href="#" class="menu__item-link">Learn how to <br> participate</a>
+				</div>
+			</div>
+			<div class="menu__item menu__item--5" data-direction="tb">
+				<div class="menu__item-inner">
+					<p class="quote">Hail to thee, our infantry, still brave, beyond the grave</p>
+				</div>
+			</div>
+			<button class="action action--menu"><svg class="icon icon--menu">
+					<use xlink:href="#icon-menu"></use>
+				</svg></button>
+			<button class="action action--close"><svg class="icon icon--close">
+					<use xlink:href="#icon-close"></use>
+				</svg></button>
+		</nav>
+		<section class="tiles tiles--rotated" id="grid2">
+			<div class="tiles__wrap">
+				<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+					<div class="tiles__line-img"></div>
+					<div class="tiles__line-img"></div>
+					<div class="tiles__line-img"></div>
+					<div class="tiles__line-img" style="background-image:url(/4.8ed29d64.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/5.7795c51e.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/6.ac3cd742.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll="" data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+					<div class="tiles__line-img"></div>
+					<div class="tiles__line-img" style="background-image:url(/8.698e0dbd.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/9.16738e2f.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/10.e7aba2b1.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/11.e75a941d.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/12.4061d1aa.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+					<div class="tiles__line-img" style="background-image:url(/13.1bbeab4e.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/14.fab38393.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/15.73adc2fc.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/16.a7efd02b.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/17.71510293.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/18.c5d0ab34.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll="" data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+					<div class="tiles__line-img" style="background-image:url(/19.8091b01d.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/20.5528d5b7.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/21.5ac924ec.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/22.699471d5.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/23.dbfd7b5e.jpg)"></div>
+					<div class="tiles__line-img"></div>
+				</div>
+				<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+					<div class="tiles__line-img"></div>
+					<div class="tiles__line-img" style="background-image:url(/26.20dd68bc.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/27.8a0dc9c0.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(/28.ed5abea3.jpg)"></div>
+					<div class="tiles__line-img"></div>
+					<div class="tiles__line-img"></div>
+				</div>
+
+			</div>
+			<span class="centered">Energía, familia y mucho talento</span>
+		</section>
+		<div class="jumbotron  conquista">
+			<h3 class="display-5 b mt-5" data-scroll="" data-scroll-speed="1">SAL Y CONQUISTA</h3>
+			<p class="lead" data-scroll="" data-scroll-speed="1">Nuestro acompañamiento 360° facilitará todo el proceso. <br>
+				Estaremos contigo en el desarrollo de tu marca, en la estrategia, <br>
+				ye en la aplicación efectiva en medios audiovisuales y digitales.</p>
+			
+			<p data-scroll="" data-scroll-speed="1"><b>¿Necesitas algo más?</b></p>
+			<p class="lead" data-scroll="" data-scroll-speed="1">
+				Háblanos, seguramente lo hacemos.
+			</p>
+			
+			<a href="/index2.html" class="btn btn-outline-secondary" data-scroll="" data-scroll-speed="1">Nuestros servicios</a>
+		</div>
+		<section class="confianza">
+			<div>
+				<h3 class="text-center">Ellos tamién han confiado en nosotros:</h3>
+				<div class="row pt-5">
+					<div class="col">img1</div>
+					<div class="col">img2</div>
+					<div class="col">img3</div>
+					<div class="col">img4</div>
+					<div class="col">img5</div>
+				  </div>
+			</div>
+		</section>
+		
+		<div class="jumbotron  pregunta">
+			<p>Sabes que algo es Syngular<br> cuando te preguntas... <br> 
+				<span>"¿Había visto algo así antes?"</span></p>
+			<p class="conoce">Conoce nuestro trabajo:</p>
+		</div>
+		<div class="row vh-100 proyecto pro1">
+			<div class="col-sm-12 my-auto proyecto">
+			  <h3>Nombre Proyecto</h3>
+			  <a href="#" class="link-button">Ver ahora</a>
+			</div>
+		 </div>
+		 <div class="row vh-100 proyecto pro2">
+			<div class="col-sm-12 my-auto proyecto">
+			  <h3>Nombre Proyecto</h3>
+			  <a href="#" class="link-button">Ver ahora</a>
+			</div>
+		 </div>
+		 <div class="row vh-100 proyecto pro3">
+			<div class="col-sm-12 my-auto proyecto">
+			  <h3>Nombre Proyecto</h3>
+			  <a href="#" class="link-button pro4">Ver ahora</a>
+			</div>
+		 </div>
+		 <div class="row vh-100 proyecto pro5">
+			<div class="col-sm-12 my-auto proyecto">
+			  <h3>Nombre Proyecto</h3>
+			  <a href="#" class="link-button">Ver ahora</a>
+			</div>
+		</div>
+		<!-- <section class="tiles" id="grid">
+			<div class="tiles__wrap">
+				<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid"
+					data-scroll-direction="horizontal">
+					<div class="tiles__line-img" style="background-image:url(img/demo1/30.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/29.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/28.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/27.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/26.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/25.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid"
+					data-scroll-direction="horizontal">
+					<div class="tiles__line-img" style="background-image:url(img/demo1/24.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/23.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/22.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/19.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/18.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/17.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid"
+					data-scroll-direction="horizontal">
+					<div class="tiles__line-img" style="background-image:url(img/demo1/16.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/15.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/14.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/13.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/12.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo1/11.jpg)"></div>
+				</div>
+			</div>
+		</section> -->
+		<section class="content content--feature">
+			<p class="content__breakout content__breakout--big" data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal">UNIQUE, CREATIVE</p>
+			<p class="content__breakout content__breakout--medium" data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal">SOMOS UNA AGENCIA DE RESULTADOS</p>
+		</section>
+		<div class="jumbotron">
+			<h3 class="display-5 b mt-5" data-scroll="" data-scroll-speed="1">CONEXIÓN <br> POR INTUICIÓN</h3>
+			<p class="lead" data-scroll="" data-scroll-speed="1">Conectar con tu audiencia es nuestro principar objetivo. Ver las <br>
+				cosas diferentes, nos permite crear marcas relevantes, un poco <br>
+				inesperadas pero completamente funcionales.</p>
+			
+			<p data-scroll="" data-scroll-speed="1"><b>¿Necesitas algo más?</b></p>
+			<span class="conexion">Conoce nuestro equipo.</span>
+			
+			
+		</div>
+		<!-- <section class="tiles tiles--columns" id="grid3">
+			<div class="tiles__wrap">
+				<div class="tiles__line" data-scroll data-scroll-speed="3" data-scroll-target="#grid3"
+					data-scroll-direction="vertical">
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Jose-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Johan-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Manu-1024x1003.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll data-scroll-speed="-3" data-scroll-target="#grid3"
+					data-scroll-direction="vertical">
+					<div class="tiles__line-img" style="background-image:url(img/demo2/IG-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Vane-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Kate-1024x1003.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll data-scroll-speed="3" data-scroll-target="#grid3"
+					data-scroll-direction="vertical">
+					<div class="tiles__line-img" style="background-image:url(img/demo2/alejo-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Carlos-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Vane-1024x1003.jpg)"></div>
+				</div>
+				<div class="tiles__line" data-scroll data-scroll-speed="-3" data-scroll-target="#grid3"
+					data-scroll-direction="vertical">
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Johan-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/IG-1024x1003.jpg)"></div>
+					<div class="tiles__line-img" style="background-image:url(img/demo2/Jose-1024x1003.jpg)"></div>
+				</div>
+			</div>
+		</section> -->
+		<section class="content">
+			<a class="backtop" data-scroll="" data-scroll-speed="4">Hacia arriba</a>
+			<!-- <div class="frame frame--footer">
+				<a href="https://twitter.com/codrops" class="frame__author">@codrops</a>
+				<div class="frame__demos">
+					<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
+					<a href="index2.html" class="frame__demo">Demo 2</a>
+					<a href="index3.html" class="frame__demo">Demo 3</a>
+				</div>
+			</div> -->
+
+		</section>
+		<div class="container final">
+			<div class="row row-cols-3">
+			  <div class="col-sm">
+				<img src="/syngular.22a52702.png" alt="logo" class="logo">
+			  </div>
+			  <div class="col-sm d-flex flex-column bd-highlight mb-3">
+				<a href="#" class="col-12">Nuestro trabajo.</a>
+				
+				<a href="#" class="col-12">Nuestros servicios.</a>
+				
+				<a href="#" class="col-12">Nosotros.</a>
+				
+			  </div>
+			  <div class="col-sm d-flex flex-column bd-highlight mb-3">
+				<a href="#" class="col-12">Instagram</a>
+				<a href="#" class="col-12">WhatsApp</a>
+				<a href="mailto:consultor@syngular.co" class="col-12">Correo eléctronico</a>
+			  </div>
+			  
+			</div>
+			<div id="copy" class="text-center copy">
+				
+				Syngular <script>document.write(new Date().getFullYear());</script><br> Todos los Derechos Reservados &copy; 
+			  </div>
+		  </div>
+	</main>
+	<script src="/js.00a46daa.js"></script>
+	<script src="/imagesloaded.pkgd.min.31bdd18c.js"></script>
+	<script src="/TweenMax.min.d8cf83d7.js"></script>
+	<script src="/menu.0c91648c.js"></script>
+	<script src="/swup.min.cf6aac5f.js"></script>
+	<script>var swup = new Swup();</script>
+
+</body>
+
+</html>

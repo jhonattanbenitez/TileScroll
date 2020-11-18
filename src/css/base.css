@@ -105,7 +105,6 @@ main {
 	overflow: hidden;
 	position: relative;
 }
-
 .frame {
 	text-align: center;
 	position: relative;
@@ -784,6 +783,22 @@ html.has-scroll-dragging {
 	cursor: grabbing; 
 }
 
+.final{
+	width: 100vw;
+	height: 500px;
+	
+}
+.final a{
+	text-decoration: none;
+	padding: 0.5rem;
+	border-bottom: 1px solid white;
+}
+hr{
+	border: 1px solid white;
+}
+.copy{
+	margin-top: 50px;
+}
 @media screen and (min-width: 53em) {
 	.frame {
 		display: grid;

@@ -24,6 +24,7 @@
     "ev-emitter": "^1.1.1",
     "imagesloaded": "^4.1.4",
     "locomotive-scroll": "^3.6.1",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "swup": "^2.0.11"
   }
 }
