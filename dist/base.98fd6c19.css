@@ -13,8 +13,9 @@ body {
 	margin: 0;
 	--color-text: #fff;
 	--color-bg: #111;
-	--color-link: #aaa;
-	--color-link-hover: #fff;
+	--color-link: rgb(255, 255, 255);
+	--color-link-location: #6DE24B;
+	--color-link-hover: #6DE24B;
 	--color-alt: #7f6a57;
 	--color-bg-item1: #15171b;
 	--color-bg-item2: #2c35b7;
@@ -24,7 +25,7 @@ body {
 	--color-item-alt: #494d54;
 	--color-quote: #5b677a;
 	--color-info: #57535a;
-	--color-title: #e23434;
+	--color-title: #6DE24B;
 	--color-tagline: #e2e2e2;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -32,6 +33,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	counter-reset: contentSection;
 	font-family: 'Inter', sans-serif;
+
+
 }
 .logo{
 	width: 150px;
@@ -302,7 +305,7 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(/2.3ca6bb44.jpg) no-repeat 50% 50%;
+	background: url(/7.2d66e3ed.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
 }
@@ -320,7 +323,7 @@ main {
 }
 
 .menu__item-hoverlink:hover {
-	color: var(--color-link);
+	color: var(--color-link-location);
 }
 
 .quote {
@@ -397,13 +400,77 @@ main {
 }
 .jumbotron{
 	background-color: black;
+
+}
+.conquista{
+	height: 500px;
+}
+.confianza{
+	width: 100vw !important;
+	height: 500px;
+	background-color: black; 
+	padding: 2rem;
+}
+.conexion{
+	text-decoration: underline;
+}
+
+.pregunta{
+	font-size: 6vh;
+	font-weight: bold;
+	line-height: 3rem;
+	background-color: rgb(51, 51, 51);
+
+}
+.pregunta p span{
+	font-weight: bold;
+	font-style: italic;
+}
+.conoce{
+	font-size: 2vh;
+}
+.proyecto{
+	padding: 5rem;
+}
+.proyecto h3{
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 2rem;
+}
+.pro1{
+	background-color: rgb(20, 20, 20);
+}
+.pro2{
+	background-color: rgb(30, 30, 30);
+}
+.pro3{
+	background-color: rgb(40, 40, 40);
+}
+.pro4{
+	background-color: rgb(50, 50, 50);
+}
+.pro5{
+	background-color: rgb(60, 60, 60);
 }
 .jumbotron a{
 	text-decoration: none;
+	padding: 1em;
+	border: 2px solid white;
+	color: white;
+}
+.link-button{
+	margin-top: 200px;
+	text-decoration: none;
+	padding: 1em;
+	border: 2px solid white;
+	color: white;
 }
 .jumbotron h3{
-	color: green;
+	color: #6DE24B;
+	font-size: 3rem;
+	font-weight: bold;
 }
+
 .content__text {
 	font-size: 1.25rem;
 	font-size: clamp(1rem, 4vw, 1.25rem);
@@ -421,19 +488,22 @@ main {
 	margin: 0 -3rem;
 	white-space: nowrap;
 	text-transform: uppercase;
-	font-family: span, serif;
-	font-weight: 200;
-	font-style: italic;
-	color: #211f1b;
+	font-family: 'Inter', sans-serif;
+	font-weight: 900;
+	color: #777777;
+	
+	
 }
 
 .content__breakout--big {
-	font-size: 13vw;
-	font-weight: 200;
+	letter-spacing: -15px;
+	font-size: 12vw;
+	font-weight: 900;
 }
 
 .content__breakout--medium {
 	font-size: 5vw;
+	font-style: italic;
 }
 
 .tiles {
