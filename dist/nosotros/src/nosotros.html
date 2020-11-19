@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="Hover animations for a menu where images appear with an effect">
+	<meta name="keywords" content="gsap, animation, hover, menu, image, web design, javascript, template">
+	<meta name="author" content="Codrops">
+	<link rel="shortcut icon" href="/favicon.1f369df7.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zjs0dpp.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/krh5ncx.css">
+	<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+	<link rel="stylesheet" type="text/css" href="/base.9317a6ae.css">
+	<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+<script src="/base.9317a6ae.js"></script></head>
+
+<body class="loading">
+	<svg class="hidden">
+		<symbol id="icon-arrow" viewBox="0 0 24 24">
+			<title>arrow</title>
+			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "></polygon>
+		</symbol>
+		<symbol id="icon-drop" viewBox="0 0 24 24">
+			<title>drop</title>
+			<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"></path>
+			<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"></path>
+		</symbol>
+		<symbol id="icon-menu" viewBox="0 0 119 25">
+			<title>menu</title>
+			<path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z"></path>
+		</symbol>
+		<symbol id="icon-close" viewBox="0 0 24 24">
+			<title>close</title>
+			<path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"></path>
+		</symbol>
+	</svg>
+	<main>
+		<section id="header" class="logo-header">
+			<a href="/"><img src="/syngular.22a52702.png" alt="logo" class="logo"></a>
+		</section>
+		<nav class="menu">
+			<div class="menu__item menu__item--1" data-direction="bt">
+				<div class="menu__item-inner">
+					<div class="mainmenu">
+						<a href="#" class="mainmenu__item">Servicios</a>
+						<a href="#" class="mainmenu__item">Blog</a>
+						<a href="#" class="mainmenu__item">Proyectos</a>
+						<a href="#" class="mainmenu__item">Nosotros</a>
+						<a href="#" class="mainmenu__item">Contacto</a>
+					</div>
+					<p class="label label--topleft label--vert-mirror">the important stuff</p>
+					<p class="label label--bottomright label--vert">made in bannockburn</p>
+				</div>
+			</div>
+			<div class="menu__item menu__item--2" data-direction="lr">
+				<div class="menu__item-inner">
+					<div class="menu__item-map"></div>
+					<a href="#" class="menu__item-hoverlink">The location</a>
+				</div>
+			</div>
+			<div class="menu__item menu__item--3" data-direction="bt">
+				<div class="menu__item-inner">
+					<div class="sidemenu">
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">The Gameplay</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">About LARP</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">The Rules</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">History</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">People</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Join</span></a>
+						<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">...</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--4" data-direction="rl">
+				<div class="menu__item-inner">
+					<p class="label label--topleft label--line">Join us now</p>
+					<a href="#" class="menu__item-link">Learn how to <br> participate</a>
+				</div>
+			</div>
+			<div class="menu__item menu__item--5" data-direction="tb">
+				<div class="menu__item-inner">
+					<p class="quote">Hail to thee, our infantry, still brave, beyond the grave</p>
+				</div>
+			</div>
+			<button class="action action--menu"><svg class="icon icon--menu">
+					<use xlink:href="#icon-menu"></use>
+				</svg></button>
+			<button class="action action--close"><svg class="icon icon--close">
+					<use xlink:href="#icon-close"></use>
+				</svg></button>
+		</nav>
+	
+		<nav class="menu-staff">
+			
+			<a class="menu__item-staff" data-img="img/demo2/1.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Manuel <i>Mejía</i></span></span>
+				<span class="menu__item-sub">Desarrollo digital</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/IG-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Ingrith <i>Gartner</i></span></span>
+				<span class="menu__item-sub">Gerente de operaciones</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/Carlos-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Carlos <i>Tascón</i></span></span>
+				<span class="menu__item-sub">Planner de proyectos</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/Johan-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Johan <i>Molina</i></span></span>
+				<span class="menu__item-sub">CEO</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/Vane-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Vanessa <i>Becerra</i></span></span>
+				<span class="menu__item-sub">Equipo consultor</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/alejo-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Alejandro <i>Muñoz</i></span></span>
+				<span class="menu__item-sub">Desarrollo creativo</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/Kate-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Katerin <i>Bejarano</i></span></span>
+				<span class="menu__item-sub">Coordinador contable y financiero</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/Jose-1024x1003.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Jose <i>Barona</i></span></span>
+				<span class="menu__item-sub">Gerente de desarrollo creativo</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/9.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Diego <i>Serna</i></span></span>
+				<span class="menu__item-sub">Marketing digital</span>
+			</a>
+			<a class="menu__item-staff" data-img="img/demo2/10.jpg">
+				<span class="menu__item-text"><span class="menu__item-textinner">Jhonattan <i>Benitez</i></span></span>
+				<span class="menu__item-sub">Desarrollo web</span>
+			</a>
+			
+		</nav>
+		
+	</main>
+	
+	<svg class="cursor" width="80" height="80" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+		<style>.st0 {
+				fill: none;
+				stroke: #99E159;
+				stroke-miterlimit: 10;
+			}</style>
+		<path class="st0" d="M69.72,23.05C62.31,5.8,42.32-2.18,25.07,5.23l3.04,7.07C10.85,19.71,2.87,39.7,10.28,56.95
+	c7.41,17.25,27.4,25.23,44.65,17.82l-3.04-7.07C69.15,60.29,77.13,40.3,69.72,23.05z"></path>
+	</svg>
+	<script src="/demo2.a0fb6f43.js"></script>
+	<script src="/js.00a46daa.js"></script>
+	<script src="/imagesloaded.pkgd.min.31bdd18c.js"></script>
+	<script src="/TweenMax.min.d8cf83d7.js"></script>
+	<script src="/menu.0c91648c.js"></script>
+	<script src="/swup.min.cf6aac5f.js"></script>
+	
+</body>
+</html>
