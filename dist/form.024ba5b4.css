@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('/codropsicons.c3be93c9.eot');
+	src:url('/codropsicons.c3be93c9.eot?#iefix') format('embedded-opentype'),
+		url('/codropsicons.c41d056c.woff') format('woff'),
+		url('/codropsicons.918c3f6b.ttf') format('truetype'),
+		url('/codropsicons.10cf5738.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html, body, .container {
+	height: 100%;
+}
+
+body {
+	background: #000000;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Inter', sans-serif;
+	overflow: hidden;
+	overflow-y: scroll;
+	min-height: 590px;
+}
+.logo {
+	width: 150px;
+  }
+
+a {
+	color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+/* Top Navigation Style */
+.codrops-top {
+	margin-top: 1em;
+}
+
+.codrops-top a {
+	font-size: 0.69em;
+	padding: 0 0.25em;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.codrops-icon-info:before {
+	content: "\e003";
+}
+
+.codrops-icon span {
+	display: none;
+	position: absolute;
+	font-size: 0.85em;
+	padding: 0.5em 0 0 0.25em;
+	font-weight: 700;
+}
+
+.codrops-icon:hover span {
+	display: block;
+	color: #ffffff;
+}
+
+/* Related demos */
+.related {
+	font-weight: 700;
+	text-align: center;
+	padding: 5em 0;
+	display: none;
+	background: #fff;
+	color: rgba(0,0,0,0.3);
+}
+
+.overview .related {
+	display: block;
+}
+
+.related > a {
+	border: 3px solid rgb(214, 16, 16);
+	border-color: initial;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+}
+
+.related > a:hover,
+.related > a:focus {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+/*# sourceMappingURL=/form.024ba5b4.css.map */

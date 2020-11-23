@@ -397,11 +397,15 @@ main {
 
 .content__title {
   font-size: 9vw;
-  line-height: 0.8;
+  line-height: 0.79;
+  letter-spacing: -8px;
   margin: 0 0 3rem 0;
-  font-weight: 400;
   max-width: 800px;
   will-change: transform;
+  font-weight: bold;
+}
+.content__title span{
+  color: #99E159;
 }
 .titulo-principal {
   font-weight: bold;
@@ -1028,5 +1032,18 @@ hr {
 	  font-size: 1.5rem;
 	  color: #99E159;
   }
+  .content__title {
+    font-size: 12vw;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: 0 0 3rem 0;
+    max-width: 800px;
+    will-change: transform;
+    font-weight: bold;
+  }
+  .content__title span{
+    color: #99E159;
+  }
+ 
 
 }

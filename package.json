@@ -23,8 +23,12 @@
   "dependencies": {
     "ev-emitter": "^1.1.1",
     "imagesloaded": "^4.1.4",
+    "jquery": "^3.5.1",
     "locomotive-scroll": "^3.6.1",
     "parcel-bundler": "^1.12.4",
     "swup": "^2.0.11"
+  },
+  "devDependencies": {
+    "parcel-plugin-modernizr": "^1.1.4"
   }
 }
