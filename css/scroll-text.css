@@ -210,5 +210,13 @@ body {
     -webkit-text-stroke: 1px #99e159;
     color: transparent;
   }
+  .proyecto{
+    padding: 5%;
+  }
+  .proyecto h3{
+    padding: 0%;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=scroll-text.css.map */

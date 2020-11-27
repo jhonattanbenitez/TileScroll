@@ -222,7 +222,7 @@ main {
   height: 100vh;
   overflow: hidden;
   position: fixed;
-  top: -50px;
+  top:  0;
   left: 0;
   z-index: 200;
   display: grid;
